@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Disease Identification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leaf Disease Detector</h1>
+        
+        <div class="input-section">
+            <label for="leafInput" class="custom-file-upload">
+                Choose Leaf Image
+            </label>
+            <input type="file" id="leafInput" accept="image/*">
+            <button id="predictBtn">Identify Disease</button>
+        </div>
+
+        <img id="imagePreview" alt="Preview">
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.8.0/dist/tf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
